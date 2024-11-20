@@ -1,39 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>курс по инструментам</title>
 </head>
+
 <body>
-    <h1> курсы по игре на музыкальных инстрементах </h1>
-    <header>
-        <img src="images/logo.png" alt="logo" width="300" height="300">
-        <nav>
+    <header class="header">
+        <h1 class="header__title"> Курсы по игре на музыкальных инстрементах </h1>
+        <img class="heder__logo" src="images/logo.png" alt="logo" width="300" height="300">
+        <nav class="menu">
             <ul>
-                <li><a href="#"></a>Главная</li>
-                <li><a href="#"></a>поиск</li>
-                <li><a href="#"></a>выбрать курс</li>
-                <li><a href="#"></a>курс 1</li>
-                <li><a href="#"></a>курс 2</li>
-                <li><a href="#"></a>курс 3</li>
-                <li><a href="#"></a>курс 4</li>
-                <li><a href="#"></a>курс 5</li>
-                <li><a href="#"></a>курс 6</li>
-                <li><a href="#"></a>запустить видео</li>
-                <li><a href="#"></a>принять участие</li>
-                <li><a href="#"></a>посмотреть курс</li>
+                <button class="header__batton">
+                    <li><a href="#"></a>Главная</li>
+                </button>
+                <button class="header__batton">
+                    <li><a href="#"></a>поиск</li>
+                </button>
+                <button class="header__batton">
+                    <li><a href="#"></a>выбрать курс</li>
+                </button>
             </ul>
         </nav>
     </header>
-    <main>
-        Здесь основной контент
+    <main class="main">
+        <div class="about">
+            <h2 class="about__1">Мотивацтонное окно</h2>
+            <p>Мы рады представить вам уникальную возможность погрузиться в мир музыки <br>с нашим курсом игры
+                на
+                музыкальных инструментах! Независимо от вашего <br> уровня подготовки, наш курс поможет вам
+                развить
+                навыки, о которых <br> вы всегда мечтали. Вы научитесь играть на инструменте, который вам <br>
+                ближе
+                всего, будь то гитара, пианино или что-то
+                другое. Наши опытные преподаватели <br> предложат индивидуальный подход и интересные методики
+                обучения, которые
+                <br> сделают процесс увлекательным и продуктивным.
+            </p>
+            <p>Представьте, как вы будете радовать своих близких, исполняя <br> любимые мелодии, или как сможете
+                выразить
+                свои <br> эмоции через музыку. Не упустите шанс стать частью музыкального <br> сообщества и
+                раскрыть
+                свой
+                творческий потенциал!</p>
+            <p>Запишитесь на курс уже сегодня и начните свое музыкальное путешествие!</p>
+        </div>
+        <h2 class="main_kyrsi">Выбор курсов</h2>
+        <div>
+            <button class="main__button"><a href="#"></a>курс 1</button>
+            <button class="main__button"><a href="#"></a>курс 2</button>
+            <button class="main__button"><a href="#"></a>курс 3</button>
+            <button class="main__button"><a href="#"></a>курс 4</button>
+            <button class="main__button"><a href="#"></a>курс 5</button>
+            <button class="main__button"><a href="#"></a>курс 6</button>
+        </div>
+        <div class="events">
+            <h2 class="events__1">Конкурсное окно</h2>
+            <p>Если ты умеешь играть но хочешь улучшить себя или произвести впечатление на кого-то, тогда этот
+                конкурс
+                для тебя</p>
+            <p>Запиши и отправь видео, где ты играешь на музыкльном инструменте и ожидай результаты</p>
+            <p>
+            <h2 class="events__2">ПРИЗ</h2>
+            <p>скидка n% на любой курс</p>
+            <p>купон</p>
+            <p>скидка 90-100% на любой курс</p>
+            <p>мерч</p>
+            <p>Пример:</p>
+            <video class="events__video" width="320" height="240" controls>
+                <source src="video.mp4" type="video/mp4">
+                <source src="video.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+            <p><button class="events__button">
+                    <li><a href="#"></a>принять участие</li>
+                </button></p>
+            </p>
+        </div>
+        <div class="otziv">
+            <h2>Окно отзывов</h2>
+            <p>отзыв 1</p>
+            <button class="otziv__button">
+                <li><a href="#"></a>посмотреть курс</li>
+            </button>
+            <p>отзыв 2</p>
+            <button class="otziv__button">
+                <li><a href="#"></a>посмотреть курс</li>
+            </button>
+        </div>
+        <div class="voprosi">
+            <h2 class="voprosi__1">Часто задаваемые вопросы</h2>
+            <p>Вопрос 1 - ответ 1</p>
+            <p>Вопрос 2 - ответ 2</p>
+            <p>Вопрос 3 - ответ 3</p>
+            <p>Вопрос 4 - ответ 4</p>
+            <p>...</p>
+        </div>
+        <div>
 
-        главная страница
     </main>
-    <footer>
-        здесь подвал
+    <footer class="footer">
+        <h2 class="footer__1">Остались вопросы, свяжитесь с нами</h2>
+        <p>контакты</p>
+        <b>
+            <p>vk:</p>
+        </b>
+        <b>
+            <p>t.me:</p>
+        </b>
+        <b>
+            <p>...</p>
+        </b>
+        <b>
+            <p>почта@mail.ru</p>
+        </b>
+        </div>
     </footer>
 </body>
+
 </html>
