@@ -10,18 +10,33 @@
 
 <body>
     <header class="header">
+        <form action="/search" method="get">
+            <input type="text" name="query" placeholder="Поиск...">
+            <button type="submit">Искать</button>
+        </form>
+        <div class="wind_1">
+            <form action="reg.html" target="_blank">
+                <button class="button_wind1">зарегистрироваться</button>
+            </form>
+            <form action="tp.html" target="_blank">
+                <button class="button_wind1">написать в ТП</button>
+            </form>
+            <form action="pay.html" target="_blank">
+                <button class="button_wind1">оплатить курс</button>
+            </form>
+            <form action="options.html" target="_blank">
+                <button class="button_wind1">настройки по сайту</button>
+            </form>
+        </div>
         <h1 class="header__title"> Курсы по игре на музыкальных инстрементах </h1>
         <img class="heder__logo" src="images/logo.png" alt="logo" width="300" height="300">
         <nav class="menu">
             <ul>
                 <button class="header__batton">
-                    <li><a href="#"></a>Главная</li>
+                    <a href="#"></a>Главная
                 </button>
                 <button class="header__batton">
-                    <li><a href="#"></a>поиск</li>
-                </button>
-                <button class="header__batton">
-                    <li><a href="#"></a>выбрать курс</li>
+                    <a href="#"></a>выбрать курс
                 </button>
             </ul>
         </nav>
