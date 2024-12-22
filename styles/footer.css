@@ -1,0 +1,48 @@
+/*----------------------------------------------------
+        Стилизация <footer>
+----------------------------------------------------*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer__content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .header__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__content h1 {
+        text-align: center;
+    }
+
+    .header__nav {
+        margin: 10px 0;
+    }
+
+    .header__buttons {
+        justify-content: center;
+    }
+
+    .actions__video_text {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .actions__video {
+        padding-right: 0;
+        max-width: 100%;
+    }
+
+    .actions__comp_text {
+        max-width: 100%;
+    }
+}

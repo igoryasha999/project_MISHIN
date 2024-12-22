@@ -1,0 +1,76 @@
+/*----------------------------------------------------
+       Стилизация <main>
+----------------------------------------------------*/
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    flex: 1;
+}
+
+.courses__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.actions__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.actions__video_text {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+
+.actions__video {
+    flex: 0;
+    margin-top: -50px;
+    padding-right: 20px;
+    max-width: 600px;
+}
+
+.actions__comp_text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.reviews__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.review {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.review__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.452);
+}
+
+.review__text {
+    flex: 1;
+}
+
+.faq__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq__item {
+    margin-bottom: 20px;
+}
+
+.faq__question {
+    font-weight: bold;
+}

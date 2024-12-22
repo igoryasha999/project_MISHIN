@@ -1,0 +1,58 @@
+/*----------------------------------------------------
+        Стилизация <header>
+----------------------------------------------------*/
+
+header {
+    background-color: rgba(216, 216, 216, 0.795);
+    box-shadow: 0 5px 15px rgb(0, 0, 0);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header__logo {
+    margin-right: 20px;
+    max-width: 100px;
+    height: auto;
+    
+}
+
+.header__content h1 {
+    font-family: 'Comfortaa';
+    font-size: 2.2em;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+    text-shadow: 0 1px 2px rgb(0, 0, 0);
+}
+
+.header__nav {
+    background-color: #302d2d;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: 0 2px 8px rgb(0, 0, 0);
+}
+
+.header__nav a { 
+    font-family: 'Comfortaa';
+    font-size: 1em;
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgba(216, 216, 216, 0.795);
+    font-weight: bold;
+}
+
+.header__nav a:hover {
+    color: #c2c2c2;
+}

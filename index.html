@@ -1,139 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>курс по инструментам</title>
+    <title>Курсы по игре на музыкальных инструментах</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
-    <header class="header">
-        <form action="/search" method="get">
-            <input type="text" name="query" placeholder="Поиск...">
-            <button type="submit">Искать</button>
-        </form>
-        <div class="wind_1">
-            <form action="reg.html" target="_blank">
-                <button class="button_wind1">зарегистрироваться</button>
-            </form>
-            <form action="tp.html" target="_blank">
-                <button class="button_wind1">написать в ТП</button>
-            </form>
-            <form action="pay.html" target="_blank">
-                <button class="button_wind1">оплатить курс</button>
-            </form>
-            <form action="options.html" target="_blank">
-                <button class="button_wind1">настройки по сайту</button>
-            </form>
+    
+    <header>
+        <div class="header__content">
+            <img class="header__logo" src="images/logo.png" alt="Логотип" width="100" height="100">
+            <h1>Курсы по игре на музыкальных инструментах</h1>
+            <nav class="header__nav">
+                <a href="#">Главная</a>
+                <a href="#why-course">Для чего курс</a>
+                <a href="#actions">Акции</a>
+                <a href="#reviews">Отзывы</a>
+            </nav>
+            <div class="header__buttons">
+                <button class="main__button"><a href="reg.html" style="text-decoration: none;color:#efefef;">Войти</a></button>
+                <button class="main__button"><a href="tp.html" style="text-decoration: none;color:#efefef;">Тех. поддержка</a></button>
+                <button class="main__button"><a href="pay.html" style="text-decoration: none;color:#efefef;">Купить курс</a></button>
+                <button class="main__button"><a href="options.html" style="text-decoration: none;color:#efefef;">Настройки</a></button>
+            </div>
         </div>
-        <h1 class="header__title"> Курсы по игре на музыкальных инстрементах </h1>
-        <img class="heder__logo" src="images/logo.png" alt="logo" width="300" height="300">
-        <nav class="menu">
-            <ul>
-                <button class="header__batton">
-                    <a href="#"></a>Главная
-                </button>
-                <button class="header__batton">
-                    <a href="#"></a>выбрать курс
-                </button>
-            </ul>
-        </nav>
     </header>
-    <main class="main">
-        <div class="about">
-            <h2 class="about__1">Мотивацтонное окно</h2>
-            <p>Мы рады представить вам уникальную возможность погрузиться в мир музыки <br>с нашим курсом игры
-                на
-                музыкальных инструментах! Независимо от вашего <br> уровня подготовки, наш курс поможет вам
-                развить
-                навыки, о которых <br> вы всегда мечтали. Вы научитесь играть на инструменте, который вам <br>
-                ближе
-                всего, будь то гитара, пианино или что-то
-                другое. Наши опытные преподаватели <br> предложат индивидуальный подход и интересные методики
-                обучения, которые
-                <br> сделают процесс увлекательным и продуктивным.
-            </p>
-            <p>Представьте, как вы будете радовать своих близких, исполняя <br> любимые мелодии, или как сможете
-                выразить
-                свои <br> эмоции через музыку. Не упустите шанс стать частью музыкального <br> сообщества и
-                раскрыть
-                свой
-                творческий потенциал!</p>
-            <p>Запишитесь на курс уже сегодня и начните свое музыкальное путешествие!</p>
-        </div>
-        <h2 class="main_kyrsi">Выбор курсов</h2>
-        <div>
-            <button class="main__button"><a href="#"></a>курс 1</button>
-            <button class="main__button"><a href="#"></a>курс 2</button>
-            <button class="main__button"><a href="#"></a>курс 3</button>
-            <button class="main__button"><a href="#"></a>курс 4</button>
-            <button class="main__button"><a href="#"></a>курс 5</button>
-            <button class="main__button"><a href="#"></a>курс 6</button>
-        </div>
-        <div class="events">
-            <h2 class="events__1">Конкурсное окно</h2>
-            <p>Если ты умеешь играть но хочешь улучшить себя или произвести впечатление на кого-то, тогда этот
-                конкурс
-                для тебя</p>
-            <p>Запиши и отправь видео, где ты играешь на музыкльном инструменте и ожидай результаты</p>
-            <p>
-            <h2 class="events__2">ПРИЗ</h2>
-            <p>скидка n% на любой курс</p>
-            <p>купон</p>
-            <p>скидка 90-100% на любой курс</p>
-            <p>мерч</p>
-            <p>Пример:</p>
-            <video class="events__video" width="320" height="240" controls>
-                <source src="video.mp4" type="video/mp4">
-                <source src="video.webm" type="video/webm">
-                Your browser does not support the video tag.
-            </video>
-            <p><button class="events__button">
-                    <li><a href="#"></a>принять участие</li>
-                </button></p>
-            </p>
-        </div>
-        <div class="otziv">
-            <h2>Окно отзывов</h2>
-            <p>отзыв 1</p>
-            <button class="otziv__button">
-                <li><a href="#"></a>посмотреть курс</li>
-            </button>
-            <p>отзыв 2</p>
-            <button class="otziv__button">
-                <li><a href="#"></a>посмотреть курс</li>
-            </button>
-        </div>
-        <div class="voprosi">
-            <h2 class="voprosi__1">Часто задаваемые вопросы</h2>
-            <p>Вопрос 1 - ответ 1</p>
-            <p>Вопрос 2 - ответ 2</p>
-            <p>Вопрос 3 - ответ 3</p>
-            <p>Вопрос 4 - ответ 4</p>
-            <p>...</p>
-        </div>
-        <div>
 
+    <main>
+        <section id="why-course" class="main__section">
+            <h2>Для чего нужен этот курс?</h2>
+            <p>
+                Наш курс предоставляет уникальную возможность освоить игру на музыкальных инструментах, будь то гитара, фортепиано, скрипка или любой другой. Мы поможем вам развить музыкальный слух, чувство ритма и технические навыки. Вы научитесь играть любимые мелодии, импровизировать и даже создавать свою музыку. Присоединяйтесь к нам, и вы откроете для себя мир музыки!
+            </p>
+        </section>
+
+        <section class="main__section__courses">
+            <h2>Выберите свой курс</h2>
+            <div class="courses__container">
+                <button class="main__button course__button">Курс 1</button>
+                <button class="main__button course__button">Курс 2</button>
+                <button class="main__button course__button">Курс 3</button>
+                <button class="main__button course__button">Курс 4</button>
+                <button class="main__button course__button">Курс 5</button>
+                <button class="main__button course__button">Курс 6</button>
+            </div>
+        </section>
+
+          <section id="actions" class="main__section">
+            <h2>Наши Акции</h2>
+            <div class="actions__container">
+                <div class="actions__text">
+                <p>
+                   Наш курс предоставляет уникальную возможность освоить игру на музыкальных инструментах, будь то гитара, фортепиано, скрипка или любой другой. Мы поможем вам развить музыкальный слух, чувство ритма и технические навыки. Вы научитесь играть любимые мелодии, импровизировать и даже создавать свою музыку. Присоединяйтесь к нам, и вы откроете для себя мир музыки!
+                </p>
+                </div>
+               <div class="actions__video_text">
+                  <div class="actions__video">
+                    <video width="320" height="240" controls>
+                        <source class="actions__video_wind" src="images/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                  </div>
+                 <div class="actions__comp_text">
+                      <p>
+                           Прими участие в конкурсе и выиграй бесплатное обучение!
+                           Подробности и правила участия можно узнать
+                           <a href="#">по ссылке</a>.
+                      </p>
+                  </div>
+               </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="main__section">
+            <h2>Отзывы</h2>
+            <div class="reviews__container">
+              <div class="review">
+                <img class="review__img" src="images/men.png" alt="Фото пользователя">
+                  <div class="review__text">
+                  <p>
+                       "Этот курс просто потрясающий! Я всегда мечтал научиться играть на гитаре, и благодаря этим урокам моя мечта стала реальностью!" - Иван
+                  </p>
+                  </div>
+               </div>
+                <div class="review">
+                     <img class="review__img" src="images/women.jpg" alt="Фото пользователя">
+                      <div class="review__text">
+                        <p>
+                           "Очень довольна обучением! Преподаватели профессионалы, а подача материала очень доступная. Рекомендую всем!" - Мария
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <section id="faq" class="main__section">
+             <h2>Часто задаваемые вопросы</h2>
+             <div class="faq__container">
+                  <div class="faq__item">
+                    <p class="faq__question">Как проходит обучение?</p>
+                    <p class="faq__answer">Обучение проходит онлайн через личный кабинет.</p>
+                  </div>
+                  <div class="faq__item">
+                      <p class="faq__question">Нужно ли покупать инструменты для обучения?</p>
+                      <p class="faq__answer">Да, нужно иметь свой инструмент.</p>
+                   </div>
+                  <div class="faq__item">
+                     <p class="faq__question">Есть ли возможность получить сертификат?</p>
+                     <p class="faq__answer">Да, по окончании курса выдается сертификат.</p>
+                   </div>
+              </div>
+         </section>
     </main>
-    <footer class="footer">
-        <h2 class="footer__1">Остались вопросы, свяжитесь с нами</h2>
-        <p>контакты</p>
-        <b>
-            <p>vk:</p>
-        </b>
-        <b>
-            <p>t.me:</p>
-        </b>
-        <b>
-            <p>...</p>
-        </b>
-        <b>
-            <p>почта@mail.ru</p>
-        </b>
+
+    <footer>
+        <div class="footer__content">
+            <h3>Информация о нас</h3>
+            <p>Email: info@musiccourse.com</p>
+            <p>Телефон: +7-(123)-456-7890</p>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.513759978903!2d37.59094328578756!3d55.733328000792765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a6595072101%3A0xc68826c92c9af7a0!2z0JzQvtCy0L7RgdC60L7QuSDQnNCw0YDRg9C70LAg0YPQuy4sIDMsINCc0L7RgdC_0YvRjNC60LDRjyDQvtC00L3QuNC10L3QuNGP!5e0!3m2!1sru!2sru!4v1718652424687!5m2!1sru!2sru" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>
