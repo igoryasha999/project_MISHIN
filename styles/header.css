@@ -3,7 +3,7 @@
 ----------------------------------------------------*/
 
 header {
-    background-color: rgba(216, 216, 216, 0.795);
+    background-color: rgba(26, 24, 24, 0.904);
     box-shadow: 0 5px 15px rgb(0, 0, 0);
     padding: 20px;
     position: sticky;
@@ -49,10 +49,39 @@ header {
     font-size: 1em;
     margin: 0 10px;
     text-decoration: none;
-    color: rgba(216, 216, 216, 0.795);
+    color: rgba(255, 255, 255, 0.795);
     font-weight: bold;
 }
 
 .header__nav a:hover {
-    color: #c2c2c2;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .header__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__nav {
+        margin: 10px 0;
+    }
+
+    .header__buttons {
+        justify-content: center;
+    }
+
+    .actions__video_text {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .actions__video {
+        padding-right: 0;
+        max-width: 100%;
+    }
+
+    .actions__comp_text {
+        max-width: 100%;
+    }
 }
