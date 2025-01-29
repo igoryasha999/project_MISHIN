@@ -2,7 +2,7 @@
         Стилизация <header>
 ----------------------------------------------------*/
 
-header {
+.header {
     background-color: rgba(26, 24, 24, 0.904);
     box-shadow: 0 5px 15px rgb(0, 0, 0);
     padding: 20px;
@@ -28,7 +28,7 @@ header {
 }
 
 .header__content h1 {
-    font-family: 'Comfortaa';
+    font-family: 'Comfortaa', Arial, sans-serif;
     font-size: 2.2em;
     margin: 0;
     flex: 1;
@@ -45,7 +45,7 @@ header {
 }
 
 .header__nav a { 
-    font-family: 'Comfortaa';
+    font-family: 'Comfortaa', Arial, sans-serif;
     font-size: 1em;
     margin: 0 10px;
     text-decoration: none;
