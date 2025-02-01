@@ -1,6 +1,6 @@
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Comfortaa', Arial, sans-serif;
     margin: 0;
     padding: 20px;
     background-color: #f0f0f0;
@@ -10,7 +10,7 @@ body {
     align-items: center;
 }
 
-h1 {
+.h1 {
     text-align: center;
     margin-bottom: 30px;
     color: #555;

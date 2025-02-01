@@ -11,8 +11,8 @@ body {
     scroll-behavior: smooth;
 }
 
-h2 {
-    font-family: 'Comfortaa';
+.h2 {
+    font-family: 'Comfortaa', Arial, sans-serif;
     font-size: 2em;
     margin: 0;
     flex: 1;
@@ -20,8 +20,8 @@ h2 {
     text-shadow: 0 1px 2px rgb(0, 0, 0);
 }
 
-h3 {
-    font-family: 'Comfortaa';
+.h3 {
+    font-family: 'Comfortaa', Arial, sans-serif;
     font-size: 2em;
     margin: 0;
     flex: 1;
@@ -29,8 +29,8 @@ h3 {
     text-shadow: 0 1px 2px rgb(180, 180, 180);
 }
 
-p {
-    font-family: 'Comfortaa';
+.p {
+    font-family: 'Comfortaa', Arial, sans-serif;
     font-size: 1em;
     margin: 0;
     flex: 1;

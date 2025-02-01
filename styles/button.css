@@ -1,6 +1,6 @@
  .main__button {
     text-decoration: none;
-    font-family: 'Comfortaa';
+    font-family: 'Comfortaa', Arial, sans-serif;
     font-size: 1em;
 	display: inline-block;	
 	box-sizing: border-box;
