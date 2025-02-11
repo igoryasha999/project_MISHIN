@@ -1,7 +1,7 @@
 /*----------------------------------------------------
        Стилизация <main>
 ----------------------------------------------------*/
-.main {
+main {
     max-width: 1200px;
     margin: 20px auto;
     flex: 1;
@@ -27,7 +27,8 @@
 }
 
 .actions__video {
-    flex: 1;
+    flex: 0;
+    margin-top: -50px;
     padding-right: 20px;
     max-width: 600px;
 }
@@ -73,3 +74,4 @@
 .faq__question {
     font-weight: bold;
 }
+
