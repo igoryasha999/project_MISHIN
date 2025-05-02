@@ -1,0 +1,10 @@
+{
+    "welcomeMessage": "Welcome!",
+    "mainPageText": "This is the main page of your site.",
+    "section1": "Section 1",
+    "section2": "Section 2",
+    "section3": "Section 3",
+    "settingTheme": "Theme selection:",
+    "settingLanguage": "Interface language:",
+    "closeButton": "Close"
+}

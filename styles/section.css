@@ -7,7 +7,6 @@
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    
 }
 
 .main__section__courses {
@@ -17,4 +16,16 @@
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+}
+
+.main__section.dark-theme {
+    background-color: #646464;
+    color: #fff;
+    border: 1px solid #888;
+}
+
+.main__section__courses.dark-theme {
+    background-color: #646464;
+    color: #fff;
+    border: 1px solid #888;
 }

@@ -1,77 +1,53 @@
-/*----------------------------------------------------
-       Стилизация <main>
-----------------------------------------------------*/
-main {
-    max-width: 1200px;
-    margin: 20px auto;
-    flex: 1;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.courses__container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+h1 {
+    color: #333;
+    text-align: center;
     margin-top: 20px;
 }
 
-.actions__container {
-    display: flex;
-    flex-direction: column;
-}
-
-.actions__video_text {
-    display: flex;
-    flex-wrap: wrap;
+.support-container {
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
-    align-items: flex-start;
+    margin-bottom: 20px; 
 }
 
-.actions__video {
-    flex: 0;
-    margin-top: -50px;
-    padding-right: 20px;
-    max-width: 600px;
+.form-group {
+    margin-bottom: 15px;
 }
 
-.actions__comp_text {
-    flex: 1;
-    max-width: 600px;
-}
-
-.reviews__container {
-    display: flex;
-    flex-direction: column;
-}
-
-.review {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-}
-
-.review__img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-right: 15px;
-    object-fit: cover;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.452);
-}
-
-.review__text {
-    flex: 1;
-}
-
-.faq__container {
-    display: flex;
-    flex-direction: column;
-}
-
-.faq__item {
-    margin-bottom: 20px;
-}
-
-.faq__question {
+label {
+    display: block;
     font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
 }
 
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}

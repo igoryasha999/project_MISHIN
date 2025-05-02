@@ -12,6 +12,7 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
+
 }
 
 .actions__container {
@@ -37,39 +38,93 @@
     max-width: 600px;
 }
 
-.reviews__container {
+.review-container {
+    width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.review-wrapper {
     display: flex;
-    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
 }
 
 .review {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
+    width: 100%;
+    flex-shrink: 0;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    border-width: 2px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .review__img {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    margin-right: 15px;
-    object-fit: cover;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.452);
+    margin-right: 10px;
+    vertical-align: middle;
+    display: block;
+    margin: 0 auto 10px;
 }
 
 .review__text {
-    flex: 1;
+    display: block;
+}
+
+
+.indicators {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #333;
 }
 
 .faq__container {
+    width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    /* Добавим курсор, чтобы было понятно, что это кликабельный элемент */
+}
+
+.faq__wrapper {
     display: flex;
-    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
 }
 
 .faq__item {
-    margin-bottom: 20px;
+    width: 100%;
+    flex-shrink: 0;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    border-width: 2px;
+    box-sizing: border-box;
+    text-align: left;
 }
 
-.faq__question {
+.faq__item p:first-child {
     font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.faq__item p {
+    margin: 0;
 }

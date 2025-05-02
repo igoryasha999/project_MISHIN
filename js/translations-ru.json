@@ -1,0 +1,10 @@
+{
+    "welcomeMessage": "Добро пожаловать!",
+    "mainPageText": "Это главная страница вашего сайта.",
+    "section1": "Секция 1",
+    "section2": "Секция 2",
+    "section3": "Секция 3",
+    "settingTheme": "Выбор темы:",
+    "settingLanguage": "Язык интерфейса:",
+    "closeButton": "Закрыть"
+}

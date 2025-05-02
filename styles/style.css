@@ -14,10 +14,6 @@
 
 @import "section.css";
 
-@import "reg.css"; 
-
-@import "tp.css"; 
-
-@import "pay.css"; 
-
 @import "options.css"; 
+
+@import "load.css"; 

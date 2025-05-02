@@ -1,0 +1,201 @@
+body {
+    font-family: sans-serif;
+    background-color: #222; /* Темный фон */
+    color: #ddd; /* Светлый текст */
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.h1 {
+    font-family: 'Nunito', Arial, sans-serif;
+    font-size: 2.5em;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+    text-shadow: 0 1px 1px rgb(180, 180, 180);
+    color: #fff;
+}
+
+.p {
+    font-family: 'Nunito', Arial, sans-serif;
+    font-size: 1em;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+    text-shadow: 0 1px 1px rgb(180, 180, 180);
+}
+
+.h2 {
+    font-family: 'Nunito', Arial, sans-serif;
+    font-size: 2em;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+#course-info .course-module h3 {
+    font-family: 'Nunito', Arial, sans-serif;
+    font-size: 2em;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    margin-top: 0;
+}
+
+.section__guitar {
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+
+#course-info .course-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#course-info .course-module {
+    background-color: #444;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+#course-info .course-module:hover {
+    transform: translateY(-5px); /* Эффект при наведении */
+}
+
+
+
+#instructor .instructor-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#instructor img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+#instructor h3 {
+    color: #fff;
+    margin-top: 0;
+}
+
+#enroll {
+    text-align: center;
+}
+
+#enroll button {
+    margin-top: 20px;
+    background-color: #666;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#enroll button:hover {
+    background-color: #888;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #888;
+}
+
+/* кнопка */
+
+.main__button {
+    text-decoration: none;
+    font-family: 'Nunito', Arial, sans-serif;
+    font-size: 1em;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 24px;
+    margin: 20px 15px 15px 0;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    height: 37px;
+    line-height: 37px;
+    color: #fff;
+    background-color: #666;
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+    transition: box-shadow .18s ease-out;
+    background: .18s ease-out, color .18s ease-out;
+    text-decoration: none;
+}
+
+.main__button:focus-visible {
+    text-decoration: none;
+    box-shadow: 0 0 0 3px rgb(0, 0, 0);
+}
+
+.main__button:hover {
+    text-decoration: none;
+    box-shadow: 0 1px 1px 0 #000000, 0 2px 5px 0 #000000;
+}
+
+.main__button:active {
+    text-decoration: none;
+    background-color: #efefef !important;
+}
+
+.main__button:disabled {
+    text-decoration: none;
+    background-color: #eee;
+    color: #444;
+    pointer-events: none;
+}
+
+.main__button:focus-visible {
+    text-decoration: none;
+    box-shadow: 0 0 0 3px rgb(0, 0, 0);
+}
+
+.main__button:hover {
+    text-decoration: none;
+    box-shadow: 0 1px 1px 0 #000000, 0 2px 5px 0 #000000;
+}
+
+.main__button:active {
+    text-decoration: none;
+    background-color: #1f1d1d !important;
+}
+
+.main__button:disabled {
+    text-decoration: none;
+    background-color: #2c2a2a;
+    color: #444;
+    pointer-events: none;
+}

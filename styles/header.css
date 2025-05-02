@@ -3,7 +3,10 @@
 ----------------------------------------------------*/
 
 .header {
-    background-color: rgba(26, 24, 24, 0.904);
+    background-color: rgba(26, 24, 24, 0.815);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(0, 0, 0, 0.863);
+    border-radius: 15px;
     box-shadow: 0 5px 15px rgb(0, 0, 0);
     padding: 20px;
     position: sticky;
@@ -24,7 +27,7 @@
     margin-right: 20px;
     max-width: 100px;
     height: auto;
-    
+
 }
 
 .header__content h1 {
@@ -44,7 +47,7 @@
     box-shadow: 0 2px 8px rgb(0, 0, 0);
 }
 
-.header__nav a { 
+.header__nav a {
     font-family: 'Nunito', Arial, sans-serif;
     font-size: 1em;
     margin: 0 10px;
