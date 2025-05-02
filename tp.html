@@ -4,15 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>тех. поддержка</title>
-    <link rel="stylesheet" href="styles/tp.css">
+    <title>Техническая поддержка</title>
+    <link rel="stylesheet" href="styles/style2/tp.css">
     <link rel="stylesheet" href="styles/button.css">
 </head>
 
-
 <body>
     <a class="main__button" href="index.html">назад</a>
-    <h1>Техническая поддержка</h1>
+
+    <div class="support-container">
+        <h1>Техническая поддержка</h1>
+
+        <form id="support-form">
+            <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Тема:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button class="main__button" type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('support-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            console.log('Отправлено:\nИмя: ' + name + '\nEmail: ' + email + '\nТема: ' + subject + '\nСообщение: ' + message);
+            alert('Сообщение отправлено!'); 
+        });
+    </script>
 </body>
 
 </html>

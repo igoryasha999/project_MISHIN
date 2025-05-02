@@ -7,11 +7,17 @@
     <title>Курсы по игре на музыкальных инструментах</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="js/scripts.js" defer></script>
 </head>
+
+<div id="preloader">
+    <div class="loader"></div> 
+</div>
 
 <body class="body">
 
     <header class="header">
+        
         <div class="header__content">
             <img class="header__logo" src="images/logo.png" alt="Логотип" width="100" height="100">
             <h1 style="text-decoration: none;color:#efefef;">Курсы по игре на музыкальных инструментах</h1>
@@ -25,7 +31,7 @@
                 <a class="main__button" href="reg.html">Войти</a>
                 <a class="main__button" href="tp.html">Тех. поддержка</a>
                 <a class="main__button" href="pay.html">Купить курс</a>
-                <a class="main__button" href="options.html">Настройки</a>
+                <button class="options" id="settingsButton">Настройки</button>
             </div>
         </div>
     </header>
@@ -44,12 +50,12 @@
         <section class="main__section__courses">
             <h2 class="h2">Выберите свой курс</h2>
             <div class="courses__container">
-                <a class="main__button">Курс 1</a>
-                <a class="main__button">Курс 2</a>
-                <a class="main__button">Курс 3</a>
-                <a class="main__button">Курс 4</a>
-                <a class="main__button">Курс 5</a>
-                <a class="main__button">Курс 6</a>
+                <a class="main__button" href="course_1.html">Курс 1</a>
+                <a class="main__button" href="course_2.html">Курс 2</a>
+                <a class="main__button" href="course_3.html">Курс 3</a>
+                <a class="main__button" href="course_4.html">Курс 4</a>
+                <a class="main__button" href="course_5.html">Курс 5</a>
+                <a class="main__button" href="course_6.html">Курс 6</a>
             </div>
         </section>
 
@@ -84,47 +90,113 @@
 
         <section id="reviews" class="main__section">
             <h2 class="h2">Отзывы</h2>
-            <div class="reviews__container">
-                <div class="review">
-                    <img class="review__img" src="images/men.png" alt="Фото пользователя">
-                    <div class="review__text">
-                        <p class="p">
-                            "Этот курс просто потрясающий! Я всегда мечтал научиться играть на гитаре, и благодаря этим
-                            урокам моя мечта стала реальностью!" - Иван
-                        </p>
+            <div class="review-container">
+                <div class="review-wrapper">
+                    <div class="review">
+                        <img class="review__img" src="images/men.png" alt="Фото пользователя">
+                        <div class="review__text">
+                            <p class="p">
+                                "Этот курс просто потрясающий! Я всегда мечтал научиться играть на гитаре, и благодаря этим
+                                урокам моя мечта стала реальностью!" - Иван
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="review">
-                    <img class="review__img" src="images/women.jpg" alt="Фото пользователя">
-                    <div class="review__text">
-                        <p class="p">
-                            "Очень довольна обучением! Преподаватели профессионалы, а подача материала очень доступная.
-                            Рекомендую всем!" - Мария
-                        </p>
+                    <div class="review">
+                        <img class="review__img" src="images/women.jpg" alt="Фото пользователя">
+                        <div class="review__text">
+                            <p class="p">
+                                "Очень довольна обучением! Преподаватели профессионалы, а подача материала очень доступная.
+                                Рекомендую всем!" - Мария
+                            </p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <img class="review__img" src="images/men1.png" alt="Фото пользователя">
+                        <div class="review__text">
+                            <p class="p">
+                                "Эти уроки превзошли все мои ожидания! Давно хотел разобраться в основах музыки, 
+                                и теперь чувствую себя гораздо увереннее в игре на пианино. Огромное спасибо!” - Василий
+                            </p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <img class="review__img" src="images/women2.png" alt="Фото пользователя">
+                        <div class="review__text">
+                            <p class="p">
+                                "В восторге от этого мастер-класса! Никогда не думал, что смогу так круто играть на гитаре сам.
+                                 Прекрасная атмосфера и вдохновляющий преподаватель!” - Анатолий
+                            </p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <img class="review__img" src="images/women3.png" alt="Фото пользователя">
+                        <div class="review__text">
+                            <p class="p">
+                                "Курс просто супер! Я новичок в музыке, и благодаря понятным объяснениям и практическим заданиям
+                                я уже играю свои первые произведения. Спасибо за такую возможность!” - Дмитрий
+                            </p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <img class="review__img" src="images/women4.png" alt="Фото пользователя">
+                        <div class="review__text">
+                            <p class="p">
+                                "Я очень рад, что выбрал именно эту музыкальную школу! Занятия проходят интересно и эффективно,
+                                а преподаватели всегда готовы помочь и поддержать. Всем рекомендую!” - Владимир
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
+        
+            <div class="indicators">
+            </div>
         </section>
-
+        
         <section id="faq" class="main__section">
             <h2 class="h2">Часто задаваемые вопросы</h2>
             <div class="faq__container">
-                <div class="faq__item">
-                    <p class="p">Как проходит обучение?</p>
-                    <p class="p">Обучение проходит онлайн через личный кабинет.</p>
-                </div>
-                <div class="faq__item">
-                    <p class="p">Нужно ли покупать инструменты для обучения?</p>
-                    <p class="p">Да, нужно иметь свой инструмент.</p>
-                </div>
-                <div class="faq__item">
-                    <p class="p">Есть ли возможность получить сертификат?</p>
-                    <p class="p">Да, по окончании курса выдается сертификат.</p>
+                <div class="faq__wrapper">
+                    <div class="faq__item">
+                        <p class="p">Как проходит обучение?</p>
+                        <p class="p">Обучение проходит онлайн через личный кабинет.</p>
+                    </div>
+                    <div class="faq__item">
+                        <p class="p">Нужно ли покупать инструменты для обучения?</p>
+                        <p class="p">Да, нужно иметь свой инструмент.</p>
+                    </div>
+                    <div class="faq__item">
+                        <p class="p">Есть ли возможность получить сертификат?</p>
+                        <p class="p">Да, по окончании курса выдается сертификат.</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <div class="settings-overlay" id="settingsOverlay">
+        <div class="settings-panel">
+            <h2>Настройки</h2>
+            <div class="setting">
+                <label for="themeSelect" data-translate="settingTheme">Выбор темы:</label>
+                <select id="themeSelect">
+                    <option value="light">Светлая</option>
+                    <option value="dark">Темная</option>
+                </select>
+            </div>
+            <div class="setting">
+                <label for="languageSelect" data-translate="settingLanguage">Язык интерфейса:</label>
+                <select id="languageSelect">
+                    <option value="ru">Русский</option>
+                    <option value="en">Английский</option>
+                </select>
+            </div>
+            <button class="main__button" id="closeSettings">Закрыть</button>
+        </div>
+    </div>
+
+
+<a class="main__button" href="игра на js/start.html">нажми на меня ;D</a>
     <footer class="footer">
         <div class="footer__content">
             <h3 class="h3">Информация о нас</h3>
