@@ -64,3 +64,15 @@ body {
     }
 }
 
+.form__link {
+    text-align: center;
+    margin-top: 15px;
+    color: #3498db; /*  Цвет ссылок */
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.form__link:hover {
+    color: #2980b9; /*  Цвет ссылок при наведении */
+}

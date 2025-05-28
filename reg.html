@@ -1,27 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>регистрация</title>
+    <title>Вход/Регистрация</title>
     <link rel="stylesheet" href="styles/style2/reg.css">
     <link rel="stylesheet" href="styles/button.css">
     <link rel="stylesheet" href="styles/fonts.css">
 </head>
 
-
 <body>
     <a class="main__button" href="index.html">назад</a>
-    <h1 class="h1">Регистрация</h1>
-    <form class="form" action="" method="post">
-        <input class="input" type="text" placeholder="Ваше имя">
-        <input class="input" type="email" placeholder="Ваш e-mail">
-        <input class="input" type="tel" placeholder="Ваш телефон">
-        <input class="input" type="password" placeholder="Пароль">
-        <input class="input" type="password" placeholder="Пароль еще раз">
-        <button class="btn" type="submit">Регистрация</button>
-    </form>
+    <h1 class="h1">Вход/Регистрация</h1>
+
+    <div id="authContainer">
+        <!-- Форма входа -->
+        <form class="form" id="loginForm" action="#" method="post">
+            <input class="input" type="email" id="loginEmail" name="loginEmail" placeholder="Ваш e-mail" required>
+            <input class="input" type="password" id="loginPassword" name="loginPassword" placeholder="Пароль" required>
+            <button class="btn" type="submit">Войти</button>
+            <p class="form__link" id="showRegister">Нет аккаунта? Зарегистрироваться</p>
+        </form>
+
+        <!-- Форма регистрации -->
+        <form class="form" id="registerForm" action="#" method="post" style="display: none;">
+            <input class="input" type="text" id="registerName" name="registerName" placeholder="Ваше имя" required>
+            <input class="input" type="email" id="registerEmail" name="registerEmail" placeholder="Ваш e-mail" required>
+            <input class="input" type="tel" id="registerPhone" name="registerPhone" placeholder="Ваш телефон" required>
+            <input class="input" type="password" id="registerPassword" name="registerPassword" placeholder="Пароль" required>
+            <input class="input" type="password" id="registerConfirmPassword" name="registerConfirmPassword" placeholder="Пароль еще раз" required>
+            <button class="btn" type="submit">Зарегистрироваться</button>
+            <p class="form__link" id="showLogin">Уже есть аккаунт? Войти</p>
+        </form>
+    </div>
+
+    <script src="js/register.js"></script>
 </body>
 
 </html>
