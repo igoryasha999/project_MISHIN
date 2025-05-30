@@ -7,16 +7,36 @@
     <link rel="stylesheet" href="styles/style_course.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/options.css">
     <script src="js/script_course.js"></script>
 </head>
 <body>
     
-    <header class="header">
-        <h1 class="h1">Курс игры на ПИАНИНО для начинающих</h1>
-        <p class="p">Откройте для себя мир музыки!</p>
+        <header class="header">
+        
+        <div class="header__content">
+            <img class="header__logo" src="images/logo.png" alt="Логотип" width="100" height="100">
+            <h1 style="text-decoration: none;color:#efefef;">Курсы по игре на музыкальных инструментах</h1>
+            <nav class="header__nav">
+                <a href="#">Главная</a>
+                <a href="#why-course">Для чего курс</a>
+                <a href="#actions">Акции</a>
+                <a href="#reviews">Отзывы</a>
+            </nav>
+            <div class="header__buttons">
+                <a class="main__button" href="reg.html">Войти</a>
+                <a class="main__button" href="tp.html">Тех. поддержка</a>
+                <a class="main__button" href="pay.html">Купить курс</a>
+                <button class="options" id="settingsButton">Настройки</button>
+            </div>
+        </div>
     </header>
 
-    <section id="course-info" class="section__guitar">
+    <main class="main">
+            <a class="main__button" href="index.html">назад</a>
+<section id="course-info" class="section__guitar">
         <h2 class="h2">Что входит в этот курс?</h2>
         <div class="course-details">
             <div class="course-module">
@@ -55,9 +75,18 @@
         <button id="enroll-button" class="enroll-button">Записаться</button>
     </section>
 
-    <footer class="footer">
-        <p>&copy;  Курсы игры на пианино</p>
-        <a class="main__button" href="index.html">назад</a>
+    </main>
+    
+<footer class="footer">
+        <div class="footer__content">
+            <h3 class="h3">Информация о нас</h3>
+            <p style="text-decoration: none;color:#efefef;">Email: info@musiccourse.com</p>
+            <p style="text-decoration: none;color:#efefef;">Телефон: +7-(123)-456-7890</p>
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.513759978903!2d37.59094328578756!3d55.733328000792765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a6595072101%3A0xc68826c92c9af7a0!2z0JzQvtCy0L7RgdC60L7QuSDQnNCw0YDRg9C70LAg0YPQuy4sIDMsINCc0L7RgdC_0YvRjNC60LDRjyDQvtC00L3QuNC10L3QuNGP!5e0!3m2!1sru!2sru!4v1718652424687!5m2!1sru!2sru">
+            </iframe>
+            <p style="text-decoration: none;color:#efefef;">MISHIN IGOR DT-24</p>
+        </div>
     </footer>
 
 </body>
